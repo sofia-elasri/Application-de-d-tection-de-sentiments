@@ -1,0 +1,25 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+</head>
+<body>
+
+
+
+{% if data == 1 %}
+<img src="{% static 'img/positive.png' %}"/>
+<p>Positive sentiment</p>
+{% else %}
+<img src="{% static 'img/negative.png' %}">
+<p>Negative sentiment</p>
+{% endif %}
+
+<form action='\'>
+	<button>Back</button>
+</form>
+
+</body>
+</html>
